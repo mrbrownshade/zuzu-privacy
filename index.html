@@ -87,7 +87,7 @@
 
   <h3>3.2 Information you give us directly</h3>
   <ul>
-    <li><strong>UPI ID</strong> — optional. Used only to construct <code>upi://pay</code> intents on your device.</li>
+    <li><strong>UPI ID</strong> — optional. Stored on your profile so other group members can pay you. When someone taps "Pay via UPI" in Zuzu, your UPI ID is used to construct a <code>upi://pay</code> intent on their device. Zuzu never processes or sees the payment itself — the transaction happens entirely inside the payer's UPI app.</li>
     <li><strong>Group data</strong> — group name, member list, group creator.</li>
     <li><strong>Expense data</strong> — title, amount, currency, who paid, how it is split, category, date.</li>
     <li><strong>Settlement data</strong> — who paid whom, how much, in which group, status.</li>
@@ -114,7 +114,7 @@
     <tr><td>Show group expenses and balances</td><td>Name, photo URL, expense + settlement data</td></tr>
     <tr><td>Help you pay via UPI</td><td>Recipient's UPI ID only, at the moment you tap Pay</td></tr>
     <tr><td>Send push notifications</td><td>FCM token, group membership, expense/settlement events</td></tr>
-    <tr><td>Friend search</td><td>Name (visible to signed-in users), phone (never shown)</td></tr>
+    <tr><td>Friend search</td><td>Name (visible to signed-in users), Phone is never used for search and is never shown to other users</td></tr>
     <tr><td>Home-screen widget</td><td>Group + balance data, locally on your device</td></tr>
     <tr><td>Support &amp; grievance</td><td>Email and details you choose to include</td></tr>
   </table>
